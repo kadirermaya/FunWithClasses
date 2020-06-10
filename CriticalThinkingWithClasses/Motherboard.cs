@@ -30,17 +30,6 @@ namespace CriticalThinkingWithClasses
 
         //MEMBER METHODS (CAN DO)
 
-        public void InstallApplication(Applications application)
-        {
-            if (TemporaryMemory.TotalGigabytes > application.RequiredRam && Storage.AvailableStorage > application.RequiredStorage )
-            {
-            
-                Storage.ApplicationsInHardDrive.Add(application);
-
-            }
-            
-            
-            //add applications if requirements as expected!
-        }
+        
     }
 }
