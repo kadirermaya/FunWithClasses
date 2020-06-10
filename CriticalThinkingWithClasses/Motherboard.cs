@@ -10,24 +10,29 @@ namespace CriticalThinkingWithClasses
     {
         // MEMBER VARIABLES ( HAS A)
 
-        public string manufacturer;
-        public CPU processor;
-        public RAM temporaryMemory;
-        public HardDrive storage;
-        public GPU graphics;
+        public string Manufacturer;
+        public CPU Processor;
+        public RAM TemporaryMemory;
+        public HardDrive Storage;
+        public GPU Graphics;
 
         // CONSTRUCTOR (SPAWNER)
 
         public Motherboard(string manufacturer, CPU processor, RAM temporaryMemory, HardDrive storage, GPU graphics)
         {
-            this.manufacturer = manufacturer;
-            this.processor = processor;
-            this.temporaryMemory = temporaryMemory;
-            this.storage = storage;
-            this.graphics = graphics;
+            Manufacturer = manufacturer;
+            Processor = processor;
+            TemporaryMemory = temporaryMemory;
+            Storage = storage;
+            Graphics = graphics;
         }
 
 
         //MEMBER METHODS (CAN DO)
+
+        public void InstallApplication(Applications application)
+        {
+            Storage.ApplicationsInHardDrive.Add(application);
+        }
     }
 }

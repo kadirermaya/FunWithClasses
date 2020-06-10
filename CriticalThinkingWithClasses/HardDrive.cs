@@ -10,8 +10,9 @@ namespace CriticalThinkingWithClasses
     {
         // MEMBER VARIABLES ( HAS A)
 
-        public double storage;
-        public double availableStorage;
+        public double Storage;
+        public double AvailableStorage;
+        public List<Applications> ApplicationsInHardDrive;
 
         // CONSTRUCTOR (SPAWNER)
         //MEMBER METHODS (CAN DO)
