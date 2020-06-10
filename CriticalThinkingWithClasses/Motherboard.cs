@@ -32,7 +32,15 @@ namespace CriticalThinkingWithClasses
 
         public void InstallApplication(Applications application)
         {
-            Storage.ApplicationsInHardDrive.Add(application);
+            if (TemporaryMemory.TotalGigabytes > application.RequiredRam && Storage.AvailableStorage > application.RequiredStorage )
+            {
+            
+                Storage.ApplicationsInHardDrive.Add(application);
+
+            }
+            
+            
+            //add applications if requirements as expected!
         }
     }
 }
