@@ -10,8 +10,8 @@ namespace CriticalThinkingWithClasses
     {
         // MEMBER VARIABLES ( HAS A)
 
-        public string manufacturer;
-        public double effectiveMemory;
+        public string Manufacturer;
+        public double EffectiveMemory;
 
         // CONSTRUCTOR (SPAWNER)
         

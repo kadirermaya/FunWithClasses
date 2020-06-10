@@ -10,8 +10,8 @@ namespace CriticalThinkingWithClasses
     {
         // MEMBER VARIABLES ( HAS A)
 
-        public double totalGigabytes;
-        public string brand;
+        public double TotalGigabytes;
+        public string Brand;
 
         // CONSTRUCTOR (SPAWNER)
         //MEMBER METHODS (CAN DO)
